@@ -1,0 +1,1458 @@
+{
+  "ok": true,
+  "query": "golang",
+  "messages": {
+    "total": 46,
+    "pagination": {
+      "total_count": 46,
+      "page": 1,
+      "per_page": 20,
+      "page_count": 3,
+      "first": 1,
+      "last": 20
+    },
+    "paging": {
+      "count": 20,
+      "total": 46,
+      "page": 1,
+      "pages": 3
+    },
+    "matches": [
+      {
+        "previous": {
+          "type": "message",
+          "user": "U049DBWN8",
+          "username": "ryan.kazanciyan",
+          "ts": "1488296017.183024",
+          "text": "at any rate, that’s still not really an equivalent solution since you’re protecting a secret that an external service can invalidate after a time window has passed",
+          "iid": "247399fa-36b8-457c-aa3b-99b3da407030"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U049DBWN8",
+          "username": "ryan.kazanciyan",
+          "ts": "1488295974.179643",
+          "text": "sort of - the UX side of it just got shifted to Trace, and the feedback for the client-side component was that we shouldn’t use GoLang",
+          "iid": "02917f41-a376-478e-b1fb-1922818033d3"
+        },
+        "next": {
+          "type": "message",
+          "user": "U049DBWN8",
+          "username": "ryan.kazanciyan",
+          "ts": "1488296054.186313",
+          "text": "so what you’d have to do is set up a separate credential distribution web service",
+          "iid": "3f47dba6-07b0-4d60-9835-8cfe1ed4c5fb"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U049DBWN8",
+          "username": "ryan.kazanciyan",
+          "ts": "1488296067.187870",
+          "text": "that required a key for a client to access",
+          "iid": "93b95038-5b3e-4033-9f84-0078af618664"
+        },
+        "type": "message",
+        "user": "U049DBWN8",
+        "username": "ryan.kazanciyan",
+        "ts": "1488296027.184027",
+        "text": "in this case there’s no external service… the client is getting a credential",
+        "iid": "fc63f241-104d-4291-ba7c-bbaee6f61fe1",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C43V7V4BV",
+          "name": "poc-rackspace",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/poc-rackspace/p1488296027184027"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U0CPC1T5H",
+          "username": "zak.wolff",
+          "ts": "1485447570.000320",
+          "text": "any one heard or seen cases where Tanium client is causing battery drain based on OSX firewall and all the P2P connections? Customer has made loose observation that “since Tanium was installed my battery life has been worse’. While we haven’t been provided any actual metrics or evidence at this point the observation is being made by the CSO at a time when Tanium seems to be getting blamed for _any_ issue that arises. Their conclusion is based on seeing OSX FW using more battery and lots of logs for the FW around Tanium :confused: With that, they are now asking for Tanium best practice to whitelist Tanium client with the OSX firewall. Seems to me that port based exception might be a good option but wanted to see if anyone else has thoughts/ideas/recommendations?",
+          "iid": "d391a39c-1e36-4301-9a8d-f1730476ced4"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U02EVJBC3",
+          "username": "jeff.saxton",
+          "ts": "1485129299.000317",
+          "attachments": [
+            {
+              "title": "Regex101 - online regex editor and debugger",
+              "title_link": "https://regex101.com/#javascript",
+              "text": "Regex101 allows you to create, debug, test and have your expressions explained for PHP, PCRE, Python, Golang and JavaScript. The website also features a community where you can share useful expressions.",
+              "fallback": "Regex101 - online regex editor and debugger",
+              "thumb_url": "https://regex101.com/preview.png",
+              "from_url": "https://regex101.com/#javascript",
+              "thumb_width": 3680,
+              "thumb_height": 1532,
+              "service_icon": "https://regex101.com/apple-icon-57x57.png",
+              "service_name": "regex101.com",
+              "id": 1,
+              "extracts": null
+            }
+          ],
+          "text": ";;ExcludeFromIndexing allows for excluding file paths, directory and file name, from indexing via ECMAScript regular expression.\n;;;There are several websites that allowing regular expression testing.  Here is one example: <https://regex101.com/#javascript>\n;;;ExcludeFromIndexing=[A-Za-z]:.tmp.*\nExcludeFromIndexing=^/Volumes/",
+          "iid": "260a4b2a-63f8-49ed-a015-3794ecc46cfc"
+        },
+        "next": {
+          "type": "message",
+          "user": "U0CPC1T5H",
+          "username": "zak.wolff",
+          "ts": "1485448592.000322",
+          "text": "we talked about the first option with their team (guys below CSO aren’t convinced this is a Tanium issue but have to deal with it anyway) and they were worried that because there is actual measure of battery life (it’s just an _observation_) that he might say, “yes! it’s better now\" and then it the finger would be pointed at us without really being sure it was us.  Second option sounds like a good option. I’m looking into way to accurately monitor the socketfilterfw process now",
+          "iid": "170b12ca-fbbb-4357-a41e-1d2dd3d410fc"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U0CA0MQHE",
+          "username": "dave.kosenko",
+          "ts": "1485463011.000323",
+          "text": "sorry for the newbie mac question - what's the command line to restart the client on mac?  I know launchctl unload but what's the argument?",
+          "iid": "3197305d-e476-4d3d-b63d-fd8481fe6f3b"
+        },
+        "type": "message",
+        "user": "U0XAJU7RP",
+        "username": "nate.oyler",
+        "ts": "1485448351.000321",
+        "text": "Have them test their theory by stopping their Tanium client for a day or two and seeing if their battery life is improved. Or perhaps set ExtraConnectionLimit to 0 so that there is only one other endpoint (each direction) that they are peering with.",
+        "iid": "caa35be9-59b7-48fc-9e86-d6f5437c2451",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C029PE2V5",
+          "name": "mac_support_group",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/mac_support_group/p1485448351000321"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U02EVJBC3",
+          "username": "jeff.saxton",
+          "ts": "1485129399.001193",
+          "text": "so it doesn’t index my external drive looks like but I don’t know for sure if that’s a default when you deploy for mac",
+          "iid": "cb356129-6df1-4785-9d98-0078bd98ff4c"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U02EVJBC3",
+          "username": "jeff.saxton",
+          "ts": "1485129368.001191",
+          "attachments": [
+            {
+              "title": "Regex101 - online regex editor and debugger",
+              "title_link": "https://regex101.com/#javascript",
+              "text": "Regex101 allows you to create, debug, test and have your expressions explained for PHP, PCRE, Python, Golang and JavaScript. The website also features a community where you can share useful expressions.",
+              "fallback": "Regex101 - online regex editor and debugger",
+              "thumb_url": "https://regex101.com/preview.png",
+              "from_url": "https://regex101.com/#javascript",
+              "thumb_width": 3680,
+              "thumb_height": 1532,
+              "service_icon": "https://regex101.com/apple-icon-57x57.png",
+              "service_name": "regex101.com",
+              "id": 1,
+              "extracts": null
+            }
+          ],
+          "text": ";;ExcludeFromIndexing allows for excluding file paths, directory and file name, from indexing via ECMAScript regular expression.\n;;;There are several websites that allowing regular expression testing.  Here is one example: <https://regex101.com/#javascript>\n;;;ExcludeFromIndexing=[A-Za-z]:.tmp.*\nExcludeFromIndexing=^/Volumes/",
+          "iid": "d751ad46-024f-43a2-aa7e-0d2973c10fdf"
+        },
+        "next": {
+          "type": "message",
+          "user": "U02EVJBC3",
+          "username": "jeff.saxton",
+          "ts": "1485129626.001199",
+          "text": "well make sure that exclusion is in there",
+          "iid": "b783178d-d1db-44dd-85fa-691292fb23d0"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U02EVJBC3",
+          "username": "jeff.saxton",
+          "ts": "1485129632.001200",
+          "text": ";)",
+          "iid": "e0c18e6d-9a0b-4f63-aaaf-b74a99f1a112"
+        },
+        "type": "message",
+        "user": "U0CA0MQHE",
+        "username": "dave.kosenko",
+        "ts": "1485129531.001198",
+        "text": "The PC term is \"that bug may be differently abled\"",
+        "iid": "620ca395-7486-405f-a5d6-84da83ef4ee1",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C0ALL7JTZ",
+          "name": "index-users",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/index-users/p1485129531001198"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "",
+          "username": "octobot",
+          "ts": "1483474243.000006",
+          "attachments": [
+            {
+              "fallback": "Pull Request opened by cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #683: \"DETECT-1952: quick fix for preserving line numbers\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/683",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request opened by cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "34888b4d-d22a-41fc-9ffe-b3b34c98ceb5"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octobot",
+          "ts": "1483468423.000005",
+          "attachments": [
+            {
+              "fallback": "Pull Request merged (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #635: \"Initial commit of existing golang client sources\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request merged (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "574ffd91-70f4-46f6-b21f-98ef4e3bffc8"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octobot",
+          "ts": "1483474513.000008",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877 (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #684: \"Move files during upgrade instead of copy them to resolve DETECT-1536…\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/684",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877 (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "7c409f0c-7df8-41e9-b7cd-207964db5349"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octobot",
+          "ts": "1483474523.000009",
+          "attachments": [
+            {
+              "fallback": "Pull Request opened by bwknight877 (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #684: \"Move files during upgrade instead of copy them to resolve DETECT-1536…\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/684",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request opened by bwknight877 (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "1de82606-a572-440b-9c65-708950d7e405"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octobot",
+        "ts": "1483474393.000007",
+        "attachments": [
+          {
+            "title": "Review: Approved",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/683#pullrequestreview-15003326",
+            "color": "36a64f",
+            "extracts": null
+          }
+        ],
+        "text": "cole.gillespie approved PR \"<https://github.com/tanium/ioc-funnel/pull/683|DETECT-1952: quick fix for preserving line numbers>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "46deeec4-7832-4fed-b659-e5e5a9c5ca83",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1483474393000007"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1481743727.000301",
+          "text": "but since it's not an interpreted language, it's not horrible.",
+          "iid": "c9a1ca2b-e423-4505-a10b-cd060969d1bd"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1481743715.000300",
+          "text": "<https://golang.org/src/encoding/json/encode.go>",
+          "iid": "1367a30d-a257-4aaf-8198-49a4ae8ddf4f"
+        },
+        "next": {
+          "type": "message",
+          "user": "U0LGMENSX",
+          "username": "bryan.winstead",
+          "ts": "1481743757.000303",
+          "text": "no compiler optimizations or anything",
+          "iid": "8c4d5ea3-da74-482a-8a57-49221f4d2035"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1481743770.000304",
+          "text": "ah",
+          "iid": "dbc23ee4-22a6-47b0-910e-1815ccaad701"
+        },
+        "type": "message",
+        "user": "U0LGMENSX",
+        "username": "bryan.winstead",
+        "ts": "1481743747.000302",
+        "text": "yeah I was referring specifically to the fact that powershell’s recursion is bad",
+        "iid": "1a9dffb8-72df-4def-b6fc-ba2594a77ecc",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C1K0QNL8Z",
+          "name": "ir-gatherer-2",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ir-gatherer-2/p1481743747000302"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1481743708.000298",
+          "text": "it's more probably just that it's an interpreted langauge. you have to recurse whether you're in c or whatever.",
+          "iid": "8af8d564-a0cc-4c8f-b74d-c6abfdd94f66"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U0LGMENSX",
+          "username": "bryan.winstead",
+          "ts": "1481729891.000297",
+          "text": "I think it’s mostly an issue of recursion but there’s no way around that.",
+          "iid": "1023aa5c-2d1e-4ed2-b227-966422c195d8"
+        },
+        "next": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1481743715.000300",
+          "text": "<https://golang.org/src/encoding/json/encode.go>",
+          "iid": "fbc48775-1716-40e2-9f8f-691ef78166f1"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1481743727.000301",
+          "text": "but since it's not an interpreted language, it's not horrible.",
+          "iid": "ec2bbaa5-7bb1-4bb5-87d5-d12722ec2e0e"
+        },
+        "type": "message",
+        "user": "U026E47D7",
+        "username": "rory.prendergast",
+        "ts": "1481743715.000299",
+        "text": "here's golang doing recursive json parsing",
+        "iid": "f5ba2c17-0cdb-487e-8f4e-8d353ed2a1b6",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C1K0QNL8Z",
+          "name": "ir-gatherer-2",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ir-gatherer-2/p1481743715000299"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481137911.000083",
+          "attachments": [
+            {
+              "fallback": "Except for the fact that we serialize our transactions...",
+              "text": "Except for the fact that we serialize our transactions...",
+              "title": "michael.ericson said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/651#discussion_r91364693",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/651|Detect 1968>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "fb7e7f01-1bd2-4a32-8e14-a26363e28e98"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481137596.000082",
+          "attachments": [
+            {
+              "fallback": "For it. It would be nice of you to update the python and golang DTOs for me, please :)",
+              "text": "For it. It would be nice of you to update the python and golang DTOs for me, please :)",
+              "title": "Review: Approved",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/651#pullrequestreview-11872489",
+              "color": "36a64f",
+              "extracts": null
+            }
+          ],
+          "text": "cheezypoofs approved PR \"<https://github.com/tanium/ioc-funnel/pull/651|Detect 1968>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "5acf50b0-4275-4cd4-aadf-7635d72b27fd"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481138046.000085",
+          "attachments": [
+            {
+              "fallback": "Pull Request merged (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #651: \"Detect 1968\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/651",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request merged (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "619f1fea-5a07-4121-a5e3-fb8953274309"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481201176.000086",
+          "attachments": [
+            {
+              "fallback": "Pull Request opened by cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #652: \"Fix transaction scoping to get stream subscriptions to fire\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/652",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request opened by cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "26d68371-5c2b-45f3-b3eb-aa577168df02"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octocat",
+        "ts": "1481137921.000084",
+        "attachments": [
+          {
+            "fallback": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/651|Detect 1968>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+            "title": "michael.ericson said:",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/651#pullrequestreview-11873797",
+            "extracts": null
+          }
+        ],
+        "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/651|Detect 1968>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "0c03830d-41bc-4140-b98d-89796f4e01dd",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1481137921000084"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481049906.000043",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #650: \"Fix default stream histories not working\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/650",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "deebae64-517c-440e-91e0-483c11a08a3b"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481046886.000042",
+          "attachments": [
+            {
+              "fallback": "@michael-ericson-tanium a solid suggesting. the `raw` subcommand does a raw pretty print of the JSON now. I wonder if I could add a global `--raw` to all of the REST-based commands to also skip the DTO interpretation and just go right to the pretty print. One thing I like about printing the unmarshalled response is it's cleaner and nulls are removed, but I definitely see the value of seeing the whole response for a new property we forgot to add. Logging may also fix that too as it shows the payload.",
+              "text": "@michael-ericson-tanium a solid suggesting. the `raw` subcommand does a raw pretty print of the JSON now. I wonder if I could add a global `--raw` to all of the REST-based commands to also skip the DTO interpretation and just go right to the pretty print. One thing I like about printing the unmarshalled response is it's cleaner and nulls are removed, but I definitely see the value of seeing the whole response for a new property we forgot to add. Logging may also fix that too as it shows the payload.",
+              "title": "cheezypoofs said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635#issuecomment-265221718",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/635|Initial commit of existing golang client sources>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "dc03b27b-c9e0-4e90-9cd0-72368d9dda44"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481049906.000045",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #650: \"Fix default stream histories not working\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/650",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "cf017681-28af-4b85-bfc7-84a81602c246"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481050306.000046",
+          "attachments": [
+            {
+              "fallback": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/650|Fix default stream histories not working>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "bwknight877 said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/650#pullrequestreview-11654770",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/650|Fix default stream histories not working>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "089583b8-adc3-4c9f-bb40-554de3b273a5"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octocat",
+        "ts": "1481049906.000044",
+        "attachments": [
+          {
+            "fallback": "Pull Request assigned to @bwknight877, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+            "title": "Pull Request #650: \"Fix default stream histories not working\"",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/650",
+            "extracts": null
+          }
+        ],
+        "text": "Pull Request assigned to @bwknight877, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "3ad5b227-7fc2-458d-82a9-5a2e33fd0cc4",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1481049906000044"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481043536.000025",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #649: \"Fix import bindings for TaskResult/TaskStatus.\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/649",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "c47fc434-ab85-439e-9eb5-3a40a9ef8244"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481039566.000024",
+          "attachments": [
+            {
+              "fallback": "Super handy!  I haven't reviewed all of it because there's so much but here are some general design thoughts:\n\n1. Instead of binding tightly to the DTOs it would be nice to display the raw response (maybe even pretty print with a flag) to reduce the maintenance load (i.e. new DTOs, changes, etc) and any second-guessing about interpretation of the data.  Of course, that would require paging so it might not fit the interactive console model.\n\n1. Might be cool to break out `taniumApi` as a separate project for other golang Tanium programs.\n\nI vote we ship it with future versions as a debugging tool :+1: ",
+              "text": "Super handy!  I haven't reviewed all of it because there's so much but here are some general design thoughts:\n\n1. Instead of binding tightly to the DTOs it would be nice to display the raw response (maybe even pretty print with a flag) to reduce the maintenance load (i.e. new DTOs, changes, etc) and any second-guessing about interpretation of the data.  Of course, that would require paging so it might not fit the interactive console model.\n\n1. Might be cool to break out `taniumApi` as a separate project for other golang Tanium programs.\n\nI vote we ship it with future versions as a debugging tool :+1: ",
+              "title": "michael.ericson said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635#issuecomment-265186371",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/635|Initial commit of existing golang client sources>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "a6e5b10b-af54-4a0f-928c-d890a0e7ba12"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481043536.000027",
+          "attachments": [
+            {
+              "fallback": "Pull Request opened by michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #649: \"Fix import bindings for TaskResult/TaskStatus.\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/649",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request opened by michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "82d11082-f55e-451c-b4a2-4d7ee3540f04"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1481043536.000028",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #649: \"Fix import bindings for TaskResult/TaskStatus.\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/649",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "c3d82fad-98fe-4b71-982a-7c3d43eebbac"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octocat",
+        "ts": "1481043536.000026",
+        "attachments": [
+          {
+            "fallback": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+            "title": "Pull Request #649: \"Fix import bindings for TaskResult/TaskStatus.\"",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/649",
+            "extracts": null
+          }
+        ],
+        "text": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "b6f64bc8-523b-4eab-baec-7a22b528bcc8",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1481043536000026"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U02NFDS1N",
+          "username": "ryan.catherman",
+          "ts": "1480516840.000005",
+          "text": "^ just updating some work I did late last night into that PR. not as critical as 2.5 work obviously :slightly_smiling_face:",
+          "iid": "9e6abcef-2ead-48d4-ab22-27a0a196317f"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480516815.000004",
+          "attachments": [
+            {
+              "fallback": "@connyay One thing I'd love your input on is whether we should break this into a separate repro. I think you have the opinion that maybe the tanium soap/client stuff could/should be separate but maybe the product ones not? Or maybe each of those on its own merit? Not a critical choice for now, but something I'd like to use this PR to discuss.\n\nAlso, the general organization of golang feels funky to me and I'm sure I could organize this better. If we break into a different repro, the organization would be quite different for sure. Either way, comments to the code organization would be welcome.",
+              "text": "@connyay One thing I'd love your input on is whether we should break this into a separate repro. I think you have the opinion that maybe the tanium soap/client stuff could/should be separate but maybe the product ones not? Or maybe each of those on its own merit? Not a critical choice for now, but something I'd like to use this PR to discuss.\n\nAlso, the general organization of golang feels funky to me and I'm sure I could organize this better. If we break into a different repro, the organization would be quite different for sure. Either way, comments to the code organization would be welcome.",
+              "title": "cheezypoofs said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635#issuecomment-263889524",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/635|Initial commit of existing golang client sources>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "96caa35d-63d2-4ace-bcaa-ac097b6aeccf"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480519186.000007",
+          "attachments": [
+            {
+              "fallback": "this needs to be merged into develop, release 2.5.0 is frozen unless it is a blocking bug",
+              "text": "this needs to be merged into develop, release 2.5.0 is frozen unless it is a blocking bug",
+              "title": "Review: Changes Requested",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/636#pullrequestreview-10774238",
+              "color": "d00000",
+              "extracts": null
+            }
+          ],
+          "text": "cole.gillespie requested changes to PR \"<https://github.com/tanium/ioc-funnel/pull/636|Add a SQLite CLI, and lint>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "f0b63ebe-e834-476f-98ad-090496be251e"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480520066.000008",
+          "attachments": [
+            {
+              "title": "Review: Approved",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/636#pullrequestreview-10777789",
+              "color": "36a64f",
+              "extracts": null
+            }
+          ],
+          "text": "cole.gillespie approved PR \"<https://github.com/tanium/ioc-funnel/pull/636|Add a SQLite CLI, and lint>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "ab758e39-9b92-4889-95e2-eb67ade80d87"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octocat",
+        "ts": "1480519106.000006",
+        "attachments": [
+          {
+            "fallback": "Nice!\n\nOne nit - let's rename `sqliteCli.js` to `sqlite-cli.js` for consistency with our de-facto source file naming conventions.",
+            "text": "Nice!\n\nOne nit - let's rename `sqliteCli.js` to `sqlite-cli.js` for consistency with our de-facto source file naming conventions.",
+            "title": "Review: Approved",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/636#pullrequestreview-10773921",
+            "color": "36a64f",
+            "extracts": null
+          }
+        ],
+        "text": "michael.ericson approved PR \"<https://github.com/tanium/ioc-funnel/pull/636|Add a SQLite CLI, and lint>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "bf7fa960-af57-4851-8304-ebdeba28922b",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1480519106000006"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480454376.000047",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #637: \"DETECT-1953: show detection link from intel detection page\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/637",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "c90df9fc-c2ac-4114-b020-dcf3d86fb78a"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480454376.000046",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #637: \"DETECT-1953: show detection link from intel detection page\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/637",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @cole.gillespie, @cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "53a8abbb-dc46-4cb9-8063-c755f90d870c"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480476261.000049",
+          "attachments": [
+            {
+              "fallback": "um, bad rebase or target branch? should the target branch be `release/2.5.0` ?",
+              "text": "um, bad rebase or target branch? should the target branch be `release/2.5.0` ?",
+              "title": "cheezypoofs said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/637#issuecomment-263772791",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/637|DETECT-1953: show detection link from intel detection page>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "f0d62aed-67a5-4b4d-9850-481ffb0c866d"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480506176.000002",
+          "attachments": [
+            {
+              "fallback": "Does it make sense to print the rows if err is truthy? Maybe it should be that if err, callback err and return. Then, print rows and return undefined?",
+              "text": "Does it make sense to print the rows if err is truthy? Maybe it should be that if err, callback err and return. Then, print rows and return undefined?",
+              "title": "cheezypoofs said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/636#discussion_r90216768",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/636|Add a SQLite CLI, and lint>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "aafdd284-2086-49c7-b7d9-6a1954244f2d"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octocat",
+        "ts": "1480462396.000048",
+        "attachments": [
+          {
+            "fallback": "@coleGillespie it's in the client dir because it's a client of our API, just like the python one.",
+            "text": "@coleGillespie it's in the client dir because it's a client of our API, just like the python one.",
+            "title": "cheezypoofs said:",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/635#issuecomment-263734904",
+            "extracts": null
+          }
+        ],
+        "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/635|Initial commit of existing golang client sources>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "e4d8467d-8ec9-41fc-9805-d317332ddbe0",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1480462396000048"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480450686.000035",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @cole.gillespie, @cheezypoofs, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #636: \"Add a SQLite CLI, and lint\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/636",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @cole.gillespie, @cheezypoofs, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "5720e467-b8c3-46e8-82e8-657b7459c474"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480448266.000034",
+          "attachments": [
+            {
+              "fallback": "i still like the idea of keeping this in our source and shipping it. we can still ship even if it is its own repo. \n\nwhy the \"client\" dir?",
+              "text": "i still like the idea of keeping this in our source and shipping it. we can still ship even if it is its own repo. \n\nwhy the \"client\" dir?",
+              "title": "cole.gillespie said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635#issuecomment-263675177",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/635|Initial commit of existing golang client sources>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "7cc4a9e7-1883-4c25-93b6-57d5239292e1"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480450686.000037",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @cole.gillespie, @cheezypoofs, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #636: \"Add a SQLite CLI, and lint\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/636",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @cole.gillespie, @cheezypoofs, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "87673731-ba3b-4236-a072-2a845f1fea35"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480450686.000038",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @cole.gillespie, @cheezypoofs, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #636: \"Add a SQLite CLI, and lint\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/636",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @cole.gillespie, @cheezypoofs, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "6a99318f-d5ee-43d3-9f7f-0023300f5208"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octocat",
+        "ts": "1480450686.000036",
+        "attachments": [
+          {
+            "fallback": "Pull Request opened by bwknight877 (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+            "title": "Pull Request #636: \"Add a SQLite CLI, and lint\"",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/636",
+            "extracts": null
+          }
+        ],
+        "text": "Pull Request opened by bwknight877 (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "b7701b22-4ffc-4025-ac4c-536c36952a83",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1480450686000036"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480448066.000030",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #635: \"Initial commit of existing golang client sources\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "73defa81-09da-4be5-9633-d0536733a11d"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480448066.000029",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #635: \"Initial commit of existing golang client sources\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "0c552bf1-8eac-4930-bbd3-f713b69a37a1"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480448146.000032",
+          "attachments": [
+            {
+              "fallback": "So, this is totally not a request to merge into `develop` per se, as much as it is an opportunity to explore this code for different possibliities.\n\nMaybe we go open source just to expose the various APIs?\n\nMaybe we create a separate project for just TaniumDetectCLI?\n\nMaybe we make it a full-blown TaniumCLI?\n\nMaybe my organization of the code is completely not gloang-y :) ?\n\nLet's talk about it, play with it, and see where it goes. The night is young.",
+              "text": "So, this is totally not a request to merge into `develop` per se, as much as it is an opportunity to explore this code for different possibliities.\n\nMaybe we go open source just to expose the various APIs?\n\nMaybe we create a separate project for just TaniumDetectCLI?\n\nMaybe we make it a full-blown TaniumCLI?\n\nMaybe my organization of the code is completely not gloang-y :) ?\n\nLet's talk about it, play with it, and see where it goes. The night is young.",
+              "title": "cheezypoofs said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635#issuecomment-263674604",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/635|Initial commit of existing golang client sources>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "22c0a4af-7802-493b-afab-ad9dbe900037"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480448206.000033",
+          "attachments": [
+            {
+              "fallback": "And if you want a live walk through of the tool itself or the code, let me know. I'd love to see this thing happen.",
+              "text": "And if you want a live walk through of the tool itself or the code, let me know. I'd love to see this thing happen.",
+              "title": "cheezypoofs said:",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635#issuecomment-263674861",
+              "extracts": null
+            }
+          ],
+          "text": "Comment on \"<https://github.com/tanium/ioc-funnel/pull/635|Initial commit of existing golang client sources>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "4d52a2ad-d9e6-4a6a-a07f-70e62cb9e9bb"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octocat",
+        "ts": "1480448066.000031",
+        "attachments": [
+          {
+            "fallback": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+            "title": "Pull Request #635: \"Initial commit of existing golang client sources\"",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/635",
+            "extracts": null
+          }
+        ],
+        "text": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "d30e11b7-cf89-4fe9-ab9b-88d68167e050",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1480448066000031"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480442116.000026",
+          "attachments": [
+            {
+              "fallback": "Pull Request merged (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #632: \"DETECT-1941: Short circuit admin check when migrating folder streams.\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/632",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request merged (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "c3ff42e2-6b60-4744-b4cb-975fdb69b46f"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480442015.000025",
+          "attachments": [
+            {
+              "title": "Review: Approved",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/632#pullrequestreview-10590976",
+              "color": "36a64f",
+              "extracts": null
+            }
+          ],
+          "text": "michael.ericson approved PR \"<https://github.com/tanium/ioc-funnel/pull/632|DETECT-1941: Short circuit admin check when migrating folder streams.>\" (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "cafaf9ae-3b2a-4078-ba05-a4b35c3b03e5"
+        },
+        "next": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480448066.000028",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #635: \"Initial commit of existing golang client sources\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "0e84620f-c696-4f41-b684-9c41f2938830"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "",
+          "username": "octocat",
+          "ts": "1480448066.000029",
+          "attachments": [
+            {
+              "fallback": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+              "title": "Pull Request #635: \"Initial commit of existing golang client sources\"",
+              "id": 1,
+              "title_link": "https://github.com/tanium/ioc-funnel/pull/635",
+              "extracts": null
+            }
+          ],
+          "text": "Pull Request assigned to @bwknight877, @connor.hindley, @cole.gillespie, @michael.ericson (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+          "iid": "e9eea608-165e-45eb-8103-75428834cca1"
+        },
+        "type": "message",
+        "user": "",
+        "username": "octocat",
+        "ts": "1480448066.000027",
+        "attachments": [
+          {
+            "fallback": "Pull Request opened by cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+            "title": "Pull Request #635: \"Initial commit of existing golang client sources\"",
+            "id": 1,
+            "title_link": "https://github.com/tanium/ioc-funnel/pull/635",
+            "extracts": null
+          }
+        ],
+        "text": "Pull Request opened by cheezypoofs (<https://github.com/tanium/ioc-funnel|tanium/ioc-funnel>)",
+        "iid": "c3ff27ea-5a59-438d-be6b-c20d5b5f0e77",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C2ZDHTR97",
+          "name": "ioc-detect-reviews",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-reviews/p1480448066000027"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U03SABPDV",
+          "username": "daniel.floyd",
+          "ts": "1478287027.003663",
+          "text": "Default install path on Windows is C:\\Program Files\\Nodejs or something like that",
+          "iid": "8ca94d52-2ad2-43da-b553-2252e5ce1318"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U0BE4N9FY",
+          "username": "connor.hindley",
+          "ts": "1478287026.003662",
+          "text": "(I promise I didn’t just post that because of :golang: )",
+          "iid": "19bd7e7e-cdb1-4558-99e1-05afd0b7fd12"
+        },
+        "next": {
+          "type": "message",
+          "user": "U026E4BHX",
+          "username": "greg.smith",
+          "ts": "1478287051.003665",
+          "text": "I overwrode the install directory, and it still removed the old version",
+          "iid": "6f4080dd-4300-4a55-875b-8fc3ece8959b"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U03SABPDV",
+          "username": "daniel.floyd",
+          "ts": "1478287066.003666",
+          "text": "Nice",
+          "iid": "b9e2aae6-64ae-40a4-939c-a51d84aadc78"
+        },
+        "type": "message",
+        "user": "U03SABPDV",
+        "username": "daniel.floyd",
+        "ts": "1478287035.003664",
+        "text": "not versioned at least",
+        "iid": "8885d993-38bd-4efd-9518-4d16e7147059",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C21JC3BC2",
+          "name": "jenkins-2x",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/jenkins-2x/p1478287035003664"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1475513170.000004",
+          "text": "you know you do!",
+          "iid": "48a6116a-765e-4d0e-b0f3-426ee1ae2aa2"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1475513165.000003",
+          "text": "erg i really am not super thrilled about using the golang copy tools stuff. what that boils down to is more code I have to maintain where it’s in a wonky language nobody knows. <@U0W0DCWHG>  - want to learn golang and help? :slightly_smiling_face: it’s really fun.",
+          "iid": "cb8ff3bc-97a6-49fd-9845-7a52652247cd"
+        },
+        "next": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1475513247.000006",
+          "text": "rgr",
+          "iid": "1112f36f-4bf9-496c-93e1-ee72cea8cbf5"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U04U8HJ2P",
+          "username": "boyd.white",
+          "ts": "1475514440.000007",
+          "text": "cross post for visibility",
+          "iid": "d37b3a66-ecbc-48f0-8fbb-685d48b26b62"
+        },
+        "type": "message",
+        "user": "U0W0DCWHG",
+        "username": "brian.frisbie",
+        "ts": "1475513242.000005",
+        "text": "sure - get the okay from the higher ups and i’ll learn it",
+        "iid": "3479727d-4645-46d0-adc4-5a64b3588342",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C1K0QNL8Z",
+          "name": "ir-gatherer-2",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ir-gatherer-2/p1475513242000005"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U0781728K",
+          "username": "matt.hastings",
+          "ts": "1475015266.001064",
+          "text": "Where is the regex being applied? If it’s on the endpoint then the count won’t be there",
+          "iid": "3cd6d6b7-c15b-46e1-951b-8a95b955bbaf"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U0CPC1T5H",
+          "username": "zak.wolff",
+          "ts": "1475015240.001062",
+          "attachments": [
+            {
+              "title": "Regex101 - online regex editor and debugger",
+              "title_link": "https://regex101.com/r/1sE8vm/1",
+              "text": "Regex101 allows you to create, debug, test and have your expressions explained for PHP, PCRE, Python, Golang and JavaScript. The website also features a community where you can share useful expressions.",
+              "fallback": "Regex101 - online regex editor and debugger",
+              "thumb_url": "https://regex101.com/preview.png",
+              "from_url": "https://regex101.com/r/1sE8vm/1",
+              "thumb_width": 3680,
+              "thumb_height": 1532,
+              "service_icon": "https://regex101.com/apple-icon-57x57.png",
+              "service_name": "regex101.com",
+              "id": 1,
+              "extracts": null
+            }
+          ],
+          "text": "<https://regex101.com/r/1sE8vm/1>",
+          "iid": "711f901d-addc-4f65-89be-24b0ac5f37ec"
+        },
+        "next": {
+          "type": "message",
+          "user": "U02EVJBC3",
+          "username": "jeff.saxton",
+          "ts": "1475015332.001066",
+          "text": "first off",
+          "iid": "e2dd388c-a1b7-4c74-ab94-611207aa63bf"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U02EVJBC3",
+          "username": "jeff.saxton",
+          "ts": "1475015338.001067",
+          "text": "the parens are not necessary",
+          "iid": "fc8dfe84-867f-4703-af5b-632fc1eaf723"
+        },
+        "type": "message",
+        "user": "U0CPC1T5H",
+        "username": "zak.wolff",
+        "ts": "1475015305.001065",
+        "text": "left side of the question applies it after the endpoint right?",
+        "iid": "1930cef8-7c79-420b-a783-a99eb099657b",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C03ESQL9S",
+          "name": "troubleshooting",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/troubleshooting/p1475015305001065"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U02NFDS1N",
+          "username": "ryan.catherman",
+          "ts": "1470085671.000345",
+          "text": "(just kidding)",
+          "iid": "00e17e92-82ef-4468-9c59-9c48589ea248"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U02NFDS1N",
+          "username": "ryan.catherman",
+          "ts": "1470085661.000344",
+          "text": "and if they pay mike and me enough money, we’ll write the libraries in golang :stuck_out_tongue:",
+          "iid": "4667c6d0-bb9e-4ee4-8834-8302adf240f0"
+        },
+        "next": {
+          "type": "message",
+          "user": "U02NFDS1N",
+          "username": "ryan.catherman",
+          "ts": "1470085743.000347",
+          "text": "i just threw up in my mouth",
+          "iid": "e82fea70-c6a4-4438-85b9-dcdca7c5b24c"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U07J4CFDK",
+          "username": "michael.ericson",
+          "ts": "1470085799.000348",
+          "text": ".NET has great REST support, I'm sure they'll have no trouble using our API =D",
+          "iid": "4df766ec-8823-406f-8a5d-fd3da0a2b9dc"
+        },
+        "type": "message",
+        "user": "U08GSMC30",
+        "username": "doug.hegge",
+        "ts": "1470085693.000346",
+        "text": "Well they will want .NET :slightly_smiling_face:  but thats the easy part once we understand the REST API.  Thanks gain.",
+        "iid": "a25656e4-6f9d-451b-ade6-c5aac72dd716",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C0LRUS476",
+          "name": "ioc-detect-general",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/ioc-detect-general/p1470085693000346"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U02QM5B4Q",
+          "username": "dan.hardy",
+          "ts": "1462807311.000684",
+          "text": ":facepalm: ",
+          "iid": "3446544b-49ae-45e8-b538-c764f9ed531c"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U0LK7UPPC",
+          "username": "mike.ryan",
+          "ts": "1462806309.000682",
+          "attachments": [
+            {
+              "service_name": "GitHub",
+              "title": "cmd/link: segfault with statically linked binaries on linux · Issue #13470 · golang/go · GitHub",
+              "title_link": "https://github.com/golang/go/issues/13470",
+              "text": "Discovered with @tschottdorf. package main import ( \"net\" \"os/user\" \"C\" ) func main() { for i := 0; i &lt; 1000; i++ { _, _ = net.Dial(\"tcp\", \"localhost:1337\") _, _...",
+              "fallback": "GitHub: cmd/link: segfault with statically linked binaries on linux · Issue #13470 · golang/go",
+              "thumb_url": "https://avatars1.githubusercontent.com/u/1535036?v=3&s=400",
+              "from_url": "https://github.com/golang/go/issues/13470",
+              "thumb_width": 400,
+              "thumb_height": 400,
+              "id": 1,
+              "extracts": null
+            }
+          ],
+          "text": "<@U02QM5B4Q>:  <@U026E47D7> We’re not the only ones who’ve run into this. \nIt turns out it’s a bug with libc along the lines of what I was thinking <https://sourceware.org/bugzilla/show_bug.cgi?id=19341>. (This was filed by the golang folks <https://github.com/golang/go/issues/13470>).\n\nIn this specific case, the shared-library instance of libc won’t initialize the required ctypes data if the statically-linked libc has already created a thread. libc only ever expects there to be one instance in memory at a time, so they’ve no way to accommodate for one-another. \n\nThe maintainers of libc *don’t* know how to fix the issue, as there are other problems associated with having both a statically-linked libc and shared-library libc in memory at the same time. They recommend dynamically linking to libc rather than statically, and go on further to suggest that if you are going to statically link, that should be limited to being done within binaries that do not make heavy usage of the libc feature set.",
+          "iid": "35b1ccb8-608e-415c-b3aa-ba4839cc9cf8"
+        },
+        "next": {
+          "type": "message",
+          "user": "U02QM5B4Q",
+          "username": "dan.hardy",
+          "ts": "1462807380.000686",
+          "text": "I don't think we want the client dynamically linked.",
+          "iid": "c2d532d5-17a2-44eb-9b87-75afefd24e2b"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U02QM5B4Q",
+          "username": "dan.hardy",
+          "ts": "1462807402.000687",
+          "text": "I wonder if we can force Python to statically link?",
+          "iid": "0c561be5-0e70-4ffa-86b1-5a6d5c5a5c32"
+        },
+        "type": "message",
+        "user": "U02QM5B4Q",
+        "username": "dan.hardy",
+        "ts": "1462807366.000685",
+        "text": "I was generally under the impression that this sort of thing was okay as long as you didn't mismatch memory allocation stuff (static alloc, dynamic free, vice versa)",
+        "iid": "06c56952-e78f-461d-a94b-6c698b0452f9",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C09KPM9NZ",
+          "name": "python_for_endpoints",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/python_for_endpoints/p1462807366000685"
+      },
+      {
+        "previous": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1462215999.000455",
+          "text": "Ipc options for like vbscript sensors have been terrible and I'm sure we could abuse the names pipes pretty frequently. ",
+          "iid": "7d2660b4-3043-4145-9840-ae0af334b8cf"
+        },
+        "previous_2": {
+          "type": "message",
+          "user": "U026E47D7",
+          "username": "rory.prendergast",
+          "ts": "1462215949.000454",
+          "text": "I'd love to see you do named pipes as they are pretty interesting for cheating stuff. Many times I've thought about using them in golang or even vbscript content but haven't done it. It would be rad to get a look at how to implement them well in Python ",
+          "iid": "85193c2d-8e76-4ab2-ac5b-ea520f7bc4dc"
+        },
+        "next": {
+          "type": "message",
+          "user": "U0LK7UPPC",
+          "username": "mike.ryan",
+          "ts": "1462216008.000457",
+          "text": "the thing that’s helpful is the PeekNamedPipe method, which let’s you see if there’s any data available",
+          "iid": "5b19b5d4-d8ea-479f-bff6-f3dda634e16a"
+        },
+        "next_2": {
+          "type": "message",
+          "user": "U0E8XSPBR",
+          "username": "willy.guggenheim",
+          "ts": "1462302647.000458",
+          "text": "Are we going to show this at TNTi? I can sign is up. I am also showing our test automation framework that has been taking most of my time ",
+          "iid": "abad4ad7-9903-4dad-af84-06c881a8684c"
+        },
+        "type": "message",
+        "user": "U026E47D7",
+        "username": "rory.prendergast",
+        "ts": "1462216006.000456",
+        "text": "In Python",
+        "iid": "8810b4d9-1c64-4873-a007-5c9a47e878e4",
+        "team": "T024F7PBP",
+        "channel": {
+          "id": "C0M2GV9A5",
+          "name": "software-usage-code",
+          "is_shared": false,
+          "is_org_shared": false
+        },
+        "permalink": "https://tanium.slack.com/archives/software-usage-code/p1462216006000456"
+      }
+    ]
+  }
+}
